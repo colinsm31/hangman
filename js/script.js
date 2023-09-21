@@ -88,12 +88,12 @@ for(let i=0; i<letters.length; i++){
 function checkWin(){
   for(let i=0; i<dashes.length; i++){
     if(wrongGuesses>=7){
-      message.innerHTML = "You Lose... &Tab;&Tab; <button id='new-game'>New Game</button>"
+      message.innerHTML = "You Lose... The word was: " + hiddenWord + "&Tab;&Tab; <button id='new-game'>New Game</button>"
       gameOver = true;
 
       restart();
     }else if(!dashes.includes("_")){
-      message.innerHTML = "You Win! &Tab;&Tab; <button id='new-game'>New Game</button>"
+      message.innerHTML = "You Win! &Tab;&Tab; \n<button id='new-game'>New Game</button>"
       gameOver = true;
 
       restart();
