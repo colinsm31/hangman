@@ -37,7 +37,7 @@ movieButton.addEventListener('click', function(){
   hiddenWord = movies[index];
   for(let i=0; i<hiddenWord.length; i++){
     if(hiddenWord[i]===" "){
-      dashes.push("\t")
+      dashes.push("-")
     } else{
       dashes.push("_");
     }
